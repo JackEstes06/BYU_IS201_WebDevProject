@@ -7,10 +7,22 @@ footer {
     padding: 10px;
     margin-top: 10px;
     border: solid black 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 body {
     margin: 10px;
     padding: 10px;
+    font-family: Lora, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    border-radius: 5px;
+}
+a {
+    text-decoration: none;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -85,4 +97,39 @@ body {
 }
 @media (max-width: 767px){
     .menu-bar {display: none;}
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.icons-item-1, .icons-item-2, .icons-item-3, .icons-item-4 {
+    padding: 10px;
+}
+.img-container {
+    padding: 10px;
+    background-color: #212529;
+    border-radius: 50%;
+}
+.img-container:hover {
+    background-color: #0085a1;
+}
+.icons-img{
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    display: flex;
+}
+
+.copyright-ish {
+    color: #757e85;
+    font-style: italic;
+}
+.to-top {
+    color: #212529;
+    font-weight: bold;
+    font-style: italic;
+}
+.to-top:hover {
+    color: #0085a1;
 }
