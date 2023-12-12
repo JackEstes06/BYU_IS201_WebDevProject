@@ -1,7 +1,11 @@
+/*Jack Estes*/
+/*IS201 Section 003*/
+/*12/12/23*/
 header {
-    padding: 10px;
+/*    padding: 10px;*/
     margin-bottom: 10px;
-    border: solid black 3px;
+    height: 50px;
+/*    border: solid black 3px;*/
 }
 footer {
     padding: 10px;
@@ -10,6 +14,10 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: 1.15rem;
+    bottom: 0;
+}
+main {
+    min-height: 65vh;
 }
 body {
     margin: 10px;
@@ -23,6 +31,14 @@ body {
 }
 a {
     text-decoration: none;
+    color: #212529;
+    font-weight: bold;
+}
+a:visited {
+    color: #212529;
+}
+a:hover {
+    color: #0085a1;
 }
 hr {
     width: 200%;
@@ -38,17 +54,26 @@ hr {
     background-color: #eee;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-img {
+    margin: 1px;
+    padding-left: 5px;
 }
 /*Collapsible content should only show when the screen is small*/
 @media (min-width: 768px) {
     .header-collapsible {display: none}
+    .header {
+        justify-content: flex-start;
+    }
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .header-collapsible:hover, .menu-item:hover {
@@ -83,10 +108,17 @@ hr {
 }
 .header {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.header-item-1 {
+    font-weight: bolder;
+    font-size: 1.3rem;
 }
 .header-item-2 {
-    flex: 1;
+    position: relative;
 }
 .header-item-1, .header-item-2 {
     padding: 10px;
@@ -97,14 +129,23 @@ hr {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    border: 3px black solid;
     text-align: left;
     outline: none;
     font-size: 15px;
     border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-color: #212529;
+    /* This one was weird. On resizing, the menu bar and the hamburger menu bars were causing a shift when screen sizes changed from sm to lg. This padding keeps it from doing that. */
+    padding: 11px;
+    flex: 1;
 }
 @media (max-width: 767px){
     .menu-bar {display: none;}
+}
+.menu-item-lg {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .icons {

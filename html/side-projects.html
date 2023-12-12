@@ -1,3 +1,6 @@
+<!--Jack Estes-->
+<!--IS201 Section 003-->
+<!--12/12/23-->
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,9 +13,12 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-item-1">Header Title</div>
+        <div class="header-item-1">Jack Estes</div>
         <div class="header-item-2">
-            <button type="button" class="header-collapsible">Menu</button>
+            <button type="button" class="header-collapsible">
+                Menu
+                <img class="button-img" src="../assets/img/hamburger-icon.png" width="15px">
+            </button>
             <div class="collapsible-content">
                 <a class="menu-item" href="../index.html">Home</a>
                 <a class="menu-item" href="resume.html">Resume</a>
@@ -20,15 +26,17 @@
                 <a class="menu-item" href="about-me.html">About Me</a>
             </div>
             <div class="menu-bar">
-                <a class="menu-item" href="../index.html">Home</a>
-                <a class="menu-item" href="resume.html">Resume</a>
-                <a class="menu-item" href="#">Side Projects</a>
-                <a class="menu-item" href="about-me.html">About Me</a>
+                <a class="menu-item-lg" href="../index.html">Home</a>
+                <a class="menu-item-lg" href="resume.html">Resume</a>
+                <a class="menu-item-lg" href="#">Side Projects</a>
+                <a class="menu-item-lg" href="about-me.html">About Me</a>
             </div>
         </div>
     </header>
 
-    <p>These side projects are for fun (mostly). This page is even a side project for a class project. This page uses css from scratch by me. There were no templates that it was formed from like the other pages.</p>
+    <main>
+        <p>These side projects are for fun (mostly). This page is even a side project for a class project. This page uses css from scratch by me. There were no templates that it was formed from like the other pages.</p>
+    </main>
 
     <footer class="footer">
         <hr/>
@@ -57,7 +65,6 @@
         <div><a class="to-top" href="#">Back To Top</a></div>
         <div class="copyright-ish">Copyright &copy; Jack Estes 2023</div>
     </footer>
-
     <script>
         var coll = document.getElementsByClassName("header-collapsible");
         var i;
