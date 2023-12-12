@@ -1,0 +1,35 @@
+p {
+    font-weight: bold;
+}
+a {
+    font-weight: bold;
+}
+
+.hr-resume {
+    top: 20px;
+    border: none;
+    height: 6px;
+    background: black;
+}
+.h4-resume {
+    font-style: bold;
+}
+.h5-resume {
+    font-style: italic;
+    font-weight: normal;
+}
+.li-resume {
+    list-style-type: square;
+}
+.li-resume-main-idea {
+    font-weight: bold;
+}
+.quick-links-resume {
+    font-weight: bold;
+    background-color: #999999;
+    padding: 20px;
+    border-radius: 25px;
+}
+.skills-p-resume {
+    font-weight: normal;
+}
