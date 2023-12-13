@@ -193,3 +193,6 @@ hr {
     padding: 20px;
     border-radius: 25px;
 }
+.titleToHome:hover {
+    color: #212529
+}
