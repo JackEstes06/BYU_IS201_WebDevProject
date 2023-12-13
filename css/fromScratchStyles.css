@@ -187,3 +187,9 @@ hr {
     border-radius: 10px;
     margin: 10px;
 }
+.quick-links {
+    font-weight: bold;
+    background-color: #cccccc;
+    padding: 20px;
+    border-radius: 25px;
+}
