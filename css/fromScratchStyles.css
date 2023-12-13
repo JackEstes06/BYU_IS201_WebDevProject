@@ -1,6 +1,9 @@
 /*Jack Estes*/
 /*IS201 Section 003*/
 /*12/12/23*/
+html {
+    scroll-behavior: smooth;
+}
 header {
     margin-bottom: 10px;
     height: 50px;
@@ -48,6 +51,9 @@ hr {
     border: 0;
     border-top: 1px solid;
     opacity: 0.25;
+}
+ol {
+    font-weight: bold;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -109,7 +115,7 @@ hr {
 }
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
     margin-left: 10%;
     margin-right: 10%;
@@ -195,4 +201,52 @@ hr {
 }
 .titleToHome:hover {
     color: #212529
+}
+
+.pics-of-book {
+    display: flex;
+    flex-direction: column;
+}
+.row-of-pics-1, .row-of-pics-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+}
+.pics-1-content, .pics-2-content {
+    margin: 5px 5px 0px 5px;
+    padding: 5px 5px 0px 5px;
+}
+.pics-3-content, .pics-4-content {
+    margin: 0px 5px 5px 5px;
+    padding: 0px 5px 5px 5px;
+}
+.pics-1, .pics-2, .pics-3, .pics-4 {
+    border-radius: 10px;
+}
+
+.pi-hole-imgs {
+    display: flex;
+    flex-direction: column;
+}
+.wii-hole-imgs {
+    display: flex;
+    flex-direction: column;
+}
+.youtube-embed {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 10px;
+}
+.youtube-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
 }
