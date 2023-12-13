@@ -36,3 +36,38 @@ a {
 .adjusted-site-heading {
     height: 100%;
 }
+
+.pics-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.pics-col {
+    flex: 50%;
+    padding: 0 4px;
+}
+
+.pics-col, .pics-1 {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 10px;
+    width: 100%;
+}
+.youtube-embed {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin: 10px;
+}
+.youtube-vid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
