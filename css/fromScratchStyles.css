@@ -55,6 +55,11 @@ hr {
 ol {
     font-weight: bold;
 }
+li {
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+    width: 100%;
+}
 
 /* Style the button that is used to open and close the collapsible content */
 .header-collapsible {
